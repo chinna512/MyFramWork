@@ -10,6 +10,8 @@
 		4CC474662382A9100011B070 /* MyFramWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4745C2382A9100011B070 /* MyFramWork.framework */; };
 		4CC4746B2382A9100011B070 /* MyFramWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4746A2382A9100011B070 /* MyFramWorkTests.swift */; };
 		4CC4746D2382A9100011B070 /* MyFramWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC4745F2382A9100011B070 /* MyFramWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC474782382A9200011B070 /* PrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC474762382A9200011B070 /* PrintViewController.swift */; };
+		4CC474792382A9200011B070 /* PrintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC474772382A9200011B070 /* PrintViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		4CC474652382A9100011B070 /* MyFramWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFramWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC4746A2382A9100011B070 /* MyFramWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFramWorkTests.swift; sourceTree = "<group>"; };
 		4CC4746C2382A9100011B070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC474762382A9200011B070 /* PrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintViewController.swift; sourceTree = "<group>"; };
+		4CC474772382A9200011B070 /* PrintViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrintViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				4CC4745F2382A9100011B070 /* MyFramWork.h */,
+				4CC474762382A9200011B070 /* PrintViewController.swift */,
+				4CC474772382A9200011B070 /* PrintViewController.xib */,
 				4CC474602382A9100011B070 /* Info.plist */,
 			);
 			path = MyFramWork;
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					4CC4745B2382A9100011B070 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					4CC474642382A9100011B070 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -178,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC474792382A9200011B070 /* PrintViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC474782382A9200011B070 /* PrintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		4CC474712382A9100011B070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Coviam.Coviam.MyFramWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +374,7 @@
 		4CC474722382A9100011B070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +398,7 @@
 		4CC474742382A9100011B070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFramWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +416,7 @@
 		4CC474752382A9100011B070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFramWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
