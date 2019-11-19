@@ -8,15 +8,15 @@
 
 import UIKit
 
-class PrintViewController: UIViewController {
+public class PrintViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    func printAll() {
+   public func printAll() {
         print("static Library")
     }
 
