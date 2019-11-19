@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MyFramWork"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Small test to test code sharing via cocoapods."
   s.description  = "This is some superl oco framework that was made by kevin vugts."
   s.homepage     = "https://github.com/chinna512/MyFramWork/"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "Kevin Vugts" => "Chinnababu.2k14@gmail.com" }
   s.platform     = :ios, "12.0"
- s.source       = { :git => "https://github.com/chinna512/MyFramWork.git", :tag => "0.0.3" }
+ s.source       = { :git => "https://github.com/chinna512/MyFramWork.git", :tag => "0.0.4" }
   s.source_files = "MyFramWork/**/*"
   s.exclude_files = "MyFramWork/**/*.plist"
   s.swift_version = '4.2'
