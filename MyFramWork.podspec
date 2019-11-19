@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "Kevin Vugts" => "Chinnababu.2k14@gmail.com" }
   s.platform     = :ios, "12.0"
- s.source       = { :git => "https://github.com/chinna512/MyFramWork.git", :tag => "0.0.2" }
+ s.source       = { :git => "https://github.com/chinna512/MyFramWork.git", :tag => "0.0.3" }
   s.source_files = "MyFramWork/**/*"
   s.exclude_files = "MyFramWork/**/*.plist"
   s.swift_version = '4.2'
