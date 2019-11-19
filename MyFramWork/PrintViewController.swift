@@ -8,8 +8,16 @@
 
 import UIKit
 
+protocol LoginProtocal {
+    func getTheToken(tokenString: String)
+}
+
 public class PrintViewController: UIViewController {
 
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    var delegate:LoginProtocal?
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +28,10 @@ public class PrintViewController: UIViewController {
         print("static Library")
     }
 
-
+    @IBAction func loginButtonAction(_ sender: Any) {
+        self.delegate?.getTheToken(tokenString: "viy3gchgfiu2bekhfgiu24fbvk2e2")
+    }
+    
     /*
     // MARK: - Navigation
 
