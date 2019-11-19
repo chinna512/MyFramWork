@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginProtocal {
+public protocol LoginProtocal {
     func getTheToken(tokenString: String)
 }
 
@@ -16,7 +16,7 @@ public class PrintViewController: UIViewController {
 
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    var delegate:LoginProtocal?
+    public var delegate:LoginProtocal?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
